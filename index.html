@@ -1,0 +1,180 @@
++<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Onur Ceylan | İlk Web sayfası </title>
+    <meta name="keywords" content="Onur Ceylan | İlk Web sayfası">
+    <!--bu metalar arka plan kodu mu? arka planda çalışsın diye mi? -->
+    <meta name="description" content="Onur Ceylan | İlk Web sayfası" />
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css">
+
+    <link rel="stylesheet" href="css/global.css"> <!--bütün htm sayfaları için-->
+    <!--css ekleme sırası önemli global i hepsinde kullanacağımız için ilk global.css i ekliyoruz-->
+    <link rel="stylesheet" href="css/main.css"> <!--tek bir html sayfası için-->
+    <!-- Tablet -->
+    <link rel="stylesheet" media="(max-width:768px" href="css/tablet.css">
+    <!-- Mobile -->
+    <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css">
+</head>
+<!-- ilk başta html stillerini gir sonra style yap daha kolay olur unutmazsın -->
+
+<body>
+    <header class="bg-dark-blue "> <!--head ile header arasındaki fark ?  -->
+        <div class="container">
+            
+            <nav id="navbar"> <!--burdaki id navbar oluşturduğumuz için var-->
+                <h1 class="heading-small">Onur Ceylan</h1>
+                <!--class="" --- başka bir class dan nesne ile özellik çağırma gibi düşüün(java)-->
+                <ul>
+                    <li><a href="#home">AnaSayfa</a></li>
+                    <li><a href="#training">Eğitimler</a></li>
+                    <li><a href="#courses" class=".textcenter">Kurslar </a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <section id="home"> <!--arama motoru daha iyi anlasın diye seo? -->
+        <img src="images/onur.jpg" alt="Onur Ceylan">
+        <div class="name text-center"> <!--class css için-->
+            <h2>Onur Ceylan</h2>
+            <p>Computer Engineer | Bachelor Degree </p>
+        </div>
+        <a href="#courses" class="btn btn-dark btn-block" >Kurslara git</a>
+    </section>
+
+    <section id="training" class="bg-dark-blue">
+        <h3 class="text-center heading-medium">Eğitimler</h3>
+        <div class="items"> <!--class belirliyoruz ki daha sonra stil verdiğimiz zaman adresini bulabilelim-->
+            <article class="item">
+                <i class="fa fa-pencil"></i>
+                <h3>Sınıf İçi Eğitimler</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, molestiae. </p>
+            </article>
+            <article class="item">
+                <i class="fa fa-pencil"></i>
+                <h3>Online Eğitimler</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, molestiae. </p>
+            </article>
+            <article class="item">
+                <i class="fa fa-pencil"></i>
+                <h3>Konferanslar</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, molestiae. </p>
+            </article>
+
+        </div>
+
+    </section>
+    <section id="courses">
+        <h3 class="text-center heading-medium ">Kurslar</h3>
+        <div class="container">
+            <!-- course 1-->
+            <div class="courses">
+                <div class="course">
+                    <div class="course-image">
+                        <img src="images/python.jpg" alt="python">
+                        <span>%90 indirim</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            (40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)
+                        </div>
+                        <div class="description">
+                            (40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)
+                        </div>
+                        <div class="instructor">Mustafa Murat Coşkun,Yazılım Bilimi</div>
+                        <div class="rating">4.6 | (19990 Oylama)</div>
+                    </div>
+                </div>
+                <!-- course 2-->
+                <div class="course">
+                    <div class="course-image">
+                        <img src="images/java.jpg" alt="java">
+                        <span>%90 indirim</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            Komple Java Geliştirici Kursu
+
+                        </div>
+                        <div class="description">
+                            Komple Java Geliştirici Kursu | Sıfırdan Java Öğrenin</div>
+                        <div class="instructor">Mustafa Murat Coşkun,Yazılım Bilimi</div>
+                        <div class="rating">4.6 | (7000 Oylama)</div>
+                    </div>
+
+                </div>
+
+                <!-- course 3-->
+                <div class="course">
+                    <div class="course-image">
+                        <img src="images/javascript.jpg" alt="python">
+                        <span>%90 indirim</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            Komple Modern JavaScript Kursu</div>
+                        <div class="description">
+                            Komple Modern JavaScript Kursu - ES6+</div>
+                        <div class="instructor">Mustafa Murat Coşkun,Yazılım Bilimi</div>
+                        <div class="rating">4.7 | (2000 Oylama)</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark-blue">
+        <div class="contact-form">
+            <form>
+                <h4 class="text-center heading-medium">Bana Ulaşın</h4>
+
+                <div class="form-group">
+                    <label for="name">İsim</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="isim">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="E-mail">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mesaj</label>
+                    <textarea name="message" id="message" class="form-control"  rows="5" placeholder="Mesajınız"></textarea> <!-- tırnak içinde önceden yazmadığım halde yazmak istedğim kelimeler nasıl çıkıyor-->
+                </div>
+                <button type="submit" class="btn btn-block">Gönder</button>
+            </form>
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+
+       
+    </footer>
+
+</body>
+
+</html>
